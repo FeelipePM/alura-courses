@@ -1,0 +1,31 @@
+<canvas width="600" height="400"> </canvas>
+
+
+<script> 
+
+var tela = document.querySelector("canvas");
+var pincel = tela.getContext("2d");
+
+pincel.fillStyle = "lightgray";
+pincel.fillRect(0, 0, 600, 400);
+
+// cabeça do creeper
+pincel.fillStyle = "darkgreen";
+pincel.fillRect(0, 0, 350, 300)
+
+
+// olhos do creeper
+pincel.fillStyle = "black";
+pincel.fillRect(65, 50, 90, 90);
+pincel.fillRect(210, 50, 90, 90);
+
+// nariz do creeper
+pincel.fillStyle = "black";
+pincel.fillRect(150, 150, 70, 100);
+
+//barba do creeper
+pincel.fillStyle = "dark";
+pincel.fillRect(115, 190, 40, 110);
+pincel.fillRect(210, 190, 40, 110);
+
+</script>

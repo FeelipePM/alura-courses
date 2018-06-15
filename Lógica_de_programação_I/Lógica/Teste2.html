@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha() {
+		
+		document.write("<br>");
+
+	}
+
+	function mostra (frase) {
+
+		document.write(frase);
+		pulaLinha();
+
+	}
+	
+	var idadeMediaQuandoTemFilhos = 28;
+	var anoAtual = 2018;
+
+	var quantidadeDeGeracoes = (anoAtual - 1500) / idadeMediaQuandoTemFilhos;
+	
+
+	mostra("A quantidade de gerações é " + quantidadeDeGeracoes);
+
+</script>
