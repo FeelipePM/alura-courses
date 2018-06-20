@@ -1,3 +1,6 @@
+body{
+    display: block;
+}
 .foto-home {
     height: 200px;
     border-radius: 50%;
@@ -26,13 +29,11 @@
     -webkit-transform: rotate(-5deg) skew(-10deg);
             transform: rotate(-5deg) skew(-10deg);
     display: inline-block;
-    -webkit-animation: float 1s infinite;
-            animation: float 1s infinite;
     position: relative;
+    -webkit-animation: float 1s ease-in-out infinite;
+            animation: float 1s ease-in-out infinite;
     -webkit-animation-direction: alternate;
             animation-direction: alternate;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
 }
 .saudacao:hover em{
        -webkit-animation-play-state: paused;
@@ -79,12 +80,23 @@
     color: #FFF;
 }
 .trabalhos ul {
-    overflow: hidden;
-    border: .5em solid black;
+    display: -webkit-flex;
+    display: flex;
 }
 .trabalhos li {
-    float: left;
-    width: 33.333%;
+    -webkit-flex: auto;
+            flex: auto;
+    border: .5em solid black;
+}
+.trabalhos li:first-child  {
+    order: 2;
+    transform: scale(1.2);
+}
+.trabalhos li:nth-child(2)  {
+    order: 1;
+}
+.trabalhos li:nth-child(3)  {
+    order: 3;
 }
 .trabalhos img {
     width: 100%;
@@ -253,8 +265,7 @@ body    {
     -webkit-transform: translate(calc(.707 * (3.5em - 100%) + 100%), calc(-.707 * 3.5em)) rotate(45deg);
             transform: translate(calc(.707 * (3.5em - 100%) + 100%), calc(-.707 * 3.5em)) rotate(45deg);
 
-    width: 14em;
-    padding: 1em 0;
+    padding: 1em 3em;
     box-sizing: border-box;
 
     text-align: center;
