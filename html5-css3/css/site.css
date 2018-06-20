@@ -3,6 +3,8 @@ body {
   background-color: #F2FFFC;
   font-size: 120%;
   line-height: 1.5;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 h1, h2, .subtitulo-principal {
@@ -100,7 +102,6 @@ em  {
 }
 
 .icones-sociais a {
-  position: relative;
   width: 40px;
   height: 40px;
   display: block;
@@ -118,36 +119,35 @@ em  {
 }
 
 main  {
-  width: calc(100% - 0.9 * 300px);
-  float: left;
   padding-bottom: 4em;
+  flex-grow: 1;
 }
 
-.minha-foto, .navegacao-site{
+.minha-foto, .navegacao-site  {
   border-left: .5em solid black;
-  border-bottom: .5em solid black;
   box-sizing: border-box;
 }
 
 .navegacao-site {
   width: calc(0.9 * 300px);
-  float: right;
-  position: relative;
-  top: 300px;
+  padding-top: calc(300px + 1em);
 }
 .minha-foto{
+  border-bottom: .5em solid black;
   position: absolute;
   top: 0;
   right: 0;
   height: 300px;
 }
-
+.icones-sociais a  {
+  position: relative;
+}
 .icones-sociais a:hover::after,
-.icones-sociais a:focus::after{
+.icones-sociais a:focus::after  {
   content: attr(data-tooltip);
   position: absolute;
-  background: #000;
-  color: #FFF;
+  background: black;
+  color: white;
   top: 100%;
   width: 300%;
   right: 0;
@@ -156,13 +156,13 @@ main  {
 }
 
 .icones-sociais a:hover::before,
-.icones-sociais a:focus::before{
+.icones-sociais a:focus::before {
   content: ' ';
   position: absolute;
   bottom: 0;
   left: 0;
   width: 1em;
   height: 1em;
-  background-color: #000000;
+  background-color: black;
   transform: translateY(.5em) rotate(45deg);
 }
