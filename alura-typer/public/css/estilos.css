@@ -1,17 +1,17 @@
-.campo-digitacao    {
-    font-size: 20px;
-    height: 130px;
+.campo-digitacao	{
+	font-size: 20px;
+	height: 130px;
 }
 
-.frase  {
-    font-size: 20px;
-    text-align: left;
+.frase	{
+	font-size: 20px;
+	text-align: left;
 }
 
-.campo-desativado {
-    background-color: lightgray;
+.campo-desativado	{
+	background-color: lightgray;
 }
 
-.icones  {
-    vertical-align: middle;
+.icones	{
+	vertical-align: middle;
 }
