@@ -1,6 +1,7 @@
 $("#botao-frase").click(fraseAleatoria);
 $("#botao-frase-id").click(buscaFrase);
 
+
 function fraseAleatoria() {
     $("#spinner").toggle();
     $.get("http://localhost:3000/frases",trocaFraseAleatoria)
