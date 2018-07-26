@@ -1,12 +1,23 @@
 var campo = $(".campo-digitacao");
 var tempoInicial = $("#tempo-digitacao").text();
 
-$(function () {
-    atualizaTamanhoFrase();
-    inicializaContadores();
-		inicializaCronometro();
-		inicializaMarcadores();
-    $("#botao-reiniciar").click(reiniciaJogo);
+$(function() {
+  atualizaTamanhoFrase();
+  inicializaContadores();
+  inicializaCronometro();
+  inicializaMarcadores();
+  $("#botao-reiniciar").click(reiniciaJogo);
+  
+  atualizaPlacar();
+
+  $("#usuarios").selectize({
+    create: true,
+    sortField: "text"
+  });
+
+  $(".tooltip").tooltipster({
+    trigger: "custom"
+  });
 });
 
 function atualizaTamanhoFrase() {
@@ -86,5 +97,4 @@ function reiniciaJogo() {
     campo.toggleClass("campo-desativado");
     campo.removeClass("borda-vermelha");
     campo.removeClass("borda-verde");
-}
-       
+ }
