@@ -48,17 +48,18 @@ header{
     html{
         font-size: 1.125em;
     }
+    .secao{
+        width: 50%;
+        float: left;
+    }
 }
 
 @media (min-width: 1000px){
     html{
         font-size: 1.25em;
     }
-}
-
-@media (min-width: 600px){
     .secao{
-        width: 50%;
+        width: 33.333%;
     }
 }
 
@@ -79,7 +80,6 @@ header{
 
         transition: left 0.3s ease-out;
     }
-}
 
 .menu-ativo .barra-nav{
     left: 0;
@@ -101,8 +101,8 @@ header{
     right: 0;
 
     background: rgba(0, 0, 0, 0.4);
+    }
 }
-
 @media not all and (max-width: 600px){
     .menu-abrir,
     .menu-fechar{
