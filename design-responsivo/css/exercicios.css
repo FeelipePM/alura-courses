@@ -16,6 +16,10 @@
     padding: 0 1%;
 }
 
+.logo img{
+    width: 200px;
+}
+
 img{
     max-width: 100%
 }
@@ -143,8 +147,4 @@ header{
     top: 0;
     left: 0;
     text-indent: 0;
-}
-
-.logo img{
-    width: 200px;
 }
