@@ -1,0 +1,28 @@
+.header{
+    background: url("../img/destaque.jpeg") no-repeat;
+    background-size: cover;
+    padding-top: 30px; 
+}
+
+.header .barra-nav{
+    text-align: center;
+}
+
+.header .barra-nav .barra-item{
+    display: inline-block;
+    margin: 0 2px 30px 0;
+}
+
+.header .barra-nav .barra-item a{
+    color: white;
+    padding: 14px;
+    background: rgba(61, 61, 61, 0.233);;
+    border-radius: 6px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.5s;
+}
+
+.header .barra-nav .barra-item a:hover{
+    background-color: #696969;
+}
