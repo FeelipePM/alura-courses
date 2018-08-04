@@ -1,5 +1,5 @@
 .header{
-    background: url("../img/destaque.jpeg") no-repeat;
+    background: url(../img/destaque.jpeg) no-repeat;
     background-size: cover;
     padding-top: 30px; 
 }
@@ -16,7 +16,7 @@
 .header .barra-nav .barra-item a{
     color: white;
     padding: 14px;
-    background: rgba(61, 61, 61, 0.233);;
+    background: rgba(61, 61, 61, 0.233);
     border-radius: 6px;
     text-decoration: none;
     text-transform: uppercase;
@@ -24,5 +24,46 @@
 }
 
 .header .barra-nav .barra-item a:hover{
-    background-color: #696969;
+    background-color: #48A3A6;
+}
+
+.header .jumbotron{
+    padding: 0 0 46px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header .painel-principal{
+    color: white;
+    text-shadow: 4px 4px 8px black;
+}
+
+.header .jumbotron .titulo{
+    font-size: 3em;
+}
+
+.header .jumbotron .sub-titulo{
+    font-size: 2.6em;
+    color: #64FF64;
+    margin-top: 8px;
+}
+
+.header .jumbotron .botao {
+    display: inline-block;
+    padding: 25px 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #425163;
+    border-radius: 8px;
+  }
+
+  .header .jumbotron .painel-secundario{
+    margin-top: 28px;
+}
+
+@media(min-width: 650px){
+    .header .jumbotron{
+        font-size: 28px;
+    }
 }
