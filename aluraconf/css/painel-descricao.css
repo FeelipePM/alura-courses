@@ -1,0 +1,19 @@
+.painel-conteudo{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.painel-conteudo .titulo{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.painel-conteudo .sub-titulo{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.painel-conteudo .conteudo{
+    font-size: 20px;
+    line-height: 25px;
+}
