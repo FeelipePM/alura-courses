@@ -1,0 +1,14 @@
+.painel-formulario{
+margin-top: 30px;
+}
+
+.painel-formulario .sub-titulo{
+    text-align: center;
+    font-size: 30px;
+    color: #EF7247;
+    text-transform: uppercase;
+}
+
+.campo-botao{
+    text-align: center;
+}
