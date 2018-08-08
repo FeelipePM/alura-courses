@@ -48,16 +48,6 @@
     margin-top: 8px;
 }
 
-.header .jumbotron .botao {
-    display: inline-block;
-    padding: 25px 50px;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    background-color: #48A3A6;
-    border-radius: 8px;
-  }
-
   .header .jumbotron .painel-secundario{
     margin-top: 28px;
 }
