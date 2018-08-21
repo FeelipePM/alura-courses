@@ -28,11 +28,41 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/sprite.js"></script>
+    <script src="js/jogo.js"></script>
+
     <script>
-			const sprite = createSprite(".sprite");
-			setInterval(function	(){
-				sprite.nextFrame();
-			},	500);
+        var jogo = criaJogo(createSprite('.sprite'));
+        console.log(jogo.getEtapa()); // 1
+        jogo.setPalavraSecreta('calopsita');
+        console.log(jogo.ganhouOuPerdeu()); // false
+        jogo.processaChute('c');
+        jogo.processaChute('a');
+        jogo.processaChute('l');
+        jogo.processaChute('o');
+        jogo.processaChute('p');
+        jogo.processaChute('s');
+        jogo.processaChute('i');
+        jogo.processaChute('t');
+        console.log(jogo.ganhouOuPerdeu()); // true
+        console.log(jogo.ganhou()); // true
+        console.log(jogo.perdeu()); // false
+        jogo.reinicia();
+        console.log(jogo.getLacunas());
+        console.log(jogo.getEtapa());
+        jogo.setPalavraSecreta('calopsita');
+        jogo.processaChute('z');
+        jogo.processaChute('z');
+        jogo.processaChute('z');
+        jogo.processaChute('z');
+        jogo.processaChute('z');
+        jogo.processaChute('z');
+        jogo.processaChute('z');
+        jogo.processaChute('z');
+        jogo.processaChute('z');
+        console.log(jogo.ganhouOuPerdeu()); // true
+        console.log(jogo.ganhou()); // false
+        console.log(jogo.perdeu()); // true
+
     </script>
 </body>
 </html>
