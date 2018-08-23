@@ -1,20 +1,17 @@
-var criaController = function (jogo) {
-  var $entrada = $("#entrada");
-  var $lacunas = $(".lacunas");
+const criaController = (jogo) => {
+  let $entrada = $("#entrada");
+  let $lacunas = $(".lacunas");
 
-var exibeLacunas = function () {
+const exibeLacunas = () => {
   $lacunas.empty();
-  jogo.getLacunas().forEach(function (lacuna) {
+  jogo.getLacunas().forEach((lacuna) => {
     $("<li>").addClass("lacuna").text(lacuna).appendTo($lacunas);
   });
 };
 
-var mudaPlaceHolder = function (texto) {
-  $entrada.val("").attr("placeholder", texto);
-  
-};
+const mudaPlaceHolder = (texto) => $entrada.val("").attr("placeholder", texto);
 
-var guardaPalavraSecreta = function () {
+const guardaPalavraSecreta = () => {
   try {
   jogo.setPalavraSecreta($entrada.val().trim());
   $entrada.val("");
@@ -26,7 +23,7 @@ var guardaPalavraSecreta = function () {
   
 };
 
-var leChute = function () {
+const leChute = () => {
   try {
     var chute = $entrada.val().trim().substr(0, 1);
     $entrada.val("");
@@ -35,7 +32,7 @@ var leChute = function () {
 
   if(jogo.ganhouOuPerdeu()) {
 
-    setTimeout(function () {
+    setTimeout(() => {
       if (jogo.ganhou()) {
         alert("Parabéns, Você ganhou!");
       } else if (jogo.perdeu()) {
@@ -51,15 +48,15 @@ var leChute = function () {
 
 };
 
-var reinicia = function () {
+const reinicia = () => {
   $lacunas.empty();
   mudaPlaceHolder("Palavra Secreta");
   jogo.reinicia();
 }
 
-var inicia = function () {
+const inicia = () => {
 
-  $entrada.keypress(function (event) {
+  $entrada.keypress((event) => {
       if (event.which == 13) {
           switch (jogo.getEtapa()) {
               case 1:
@@ -72,5 +69,5 @@ var inicia = function () {
       }
   });
 }
-return { inicia: inicia };
+return { inicia };
 };
