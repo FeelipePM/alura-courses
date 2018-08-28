@@ -10,3 +10,25 @@
   margin-bottom: 0;
   font-size: 24px;
 }
+
+.grupo-radio,
+.contato-select {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.grupo-radio .radio:first-child {
+  margin-top: 0;
+}
+
+footer {
+  margin-top: 10px;
+  background-color: #333;
+  color: #FFF;
+  padding: 20px;
+}
+
+footer address:last-child {
+  margin-bottom: 0;
+}
