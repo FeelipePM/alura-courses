@@ -1,6 +1,17 @@
+// Váriaveis usadas no Sass
 $cor-padrao: #c24e4b;
 $cor-axiliar: #1e2c35;
-$corbranca: white;
+$cor-branca: white;
+
+// Mixins usadas no Sass
+@mixin borda-arredondada($raio: 0.3em) {
+  -webkit-border-radius: $raio;
+  border-radius: $raio;
+}
+
+@mixin sombra-padrao {
+  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+}
 
 /** Geral **/
 body {
@@ -60,7 +71,7 @@ header .container {
 }
 
 .menu-opcoes a {
-  color: $corbranca;
+  color: $cor-branca;
   text-decoration: none;
 }
 
@@ -73,7 +84,7 @@ header .container {
   background: url(../imagens/destaque.jpg) center bottom repeat-x;
   -webkit-background-size: cover;
   background-size: cover;
-  color: $corbranca;
+  color: $cor-branca;
   height: 330px;
   padding-top: 10em;
 }
@@ -99,9 +110,8 @@ header .container {
   border: 0;
   padding: .6em;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  @include borda-arredondada(50px);
+  @include sombra-padrao;
   font-weight: bold;
 }
 
@@ -167,11 +177,11 @@ header .container {
 }
 
 .planos h2 {
-  color: $corbranca;
+  color: $cor-branca;
 }
 
 .plano {
-  background: $corbranca;
+  background: $cor-branca;
   width: 18em;
   display: inline-block;
   margin: 1em 0 0 1.4em;
@@ -183,7 +193,7 @@ header .container {
 }
 
 .plano h3 {
-  color: $corbranca;
+  color: $cor-branca;
   font-size: 1.8em;
   background: $cor-padrao;
   text-align: center;
@@ -221,13 +231,12 @@ header .container {
 .plano button {
   background: $cor-padrao;
   border: 0;
-  color: $corbranca;
+  color: $cor-branca;
   width: 210px;
   height: 38px;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  @include borda-arredondada;
+  @include sombra-padrao;
   margin-left: 2em;
 }
 
@@ -310,8 +319,7 @@ textarea {
   width: 100%;
   margin-bottom: .8em;
   padding: 4px 8px;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
+  @include borda-arredondada;
   border: 2px solid #ccc;
 }
 
@@ -319,13 +327,12 @@ textarea {
   margin: 0 auto;
   background: $cor-padrao;
   border: 0;
-  color: $corbranca;
+  color: $cor-branca;
   width: 210px;
   height: 38px;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  @include borda-arredondada;
+  @include sombra-padrao;
 }
 
 /** Footer **/
@@ -393,7 +400,7 @@ footer .container img {
 }
 
 footer a {
-  color: $corbranca;
+  color: $cor-branca;
   text-decoration: none;
 }
 
