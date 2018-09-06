@@ -371,6 +371,9 @@ body {
 .container {
   width: 940px;
   margin: 0 auto; }
+  @media (max-width: 980px) {
+    .container {
+      width: 90%; } }
 
 .titulo-secao {
   text-decoration: underline;
@@ -393,9 +396,22 @@ header {
   height: 90px;
   width: 100%;
   position: absolute; }
+  @media (max-width: 980px) {
+    header {
+      height: auto; }
+      header h1 {
+        max-width: 50%;
+        margin: 0 auto; }
+        header h1 img {
+          max-width: 100%;
+          margin: .5em auto;
+          display: block; } }
 
 header .container {
   position: relative; }
+  @media (max-width: 980px) {
+    header .container {
+      position: static; } }
 
 .menu-principal {
   position: absolute;
@@ -403,11 +419,21 @@ header .container {
   top: -.5em;
   font-size: 1.2em;
   font-weight: lighter; }
+  @media (max-width: 980px) {
+    .menu-principal {
+      position: static;
+      display: block;
+      text-align: center;
+      width: auto; } }
   .menu-principal ul {
     padding-left: 0; }
   .menu-principal li {
     display: inline-block;
     width: 5em; }
+    @media (max-width: 980px) {
+      .menu-principal li {
+        margin: .4em;
+        width: auto; } }
   .menu-principal a {
     color: white;
     text-decoration: none; }
@@ -422,6 +448,10 @@ header .container {
   color: white;
   height: 330px;
   padding-top: 10em; }
+  @media (max-width: 980px) {
+    .destaque {
+      font-size: 14px;
+      height: 250px; } }
 
 .destaque p {
   width: 30em; }
@@ -574,6 +604,10 @@ header .container {
   width: 48%;
   display: inline-block;
   vertical-align: top; }
+  @media (max-width: 980px) {
+    .post-destaque,
+    .posts-antigos {
+      width: auto; } }
 
 .post-destaque {
   margin-right: 2em; }
@@ -600,6 +634,9 @@ header .container {
 form {
   margin: 0 auto;
   width: 50%; }
+  @media (max-width: 980px) {
+    form {
+      width: auto; } }
 
 .contato input,
 textarea {
