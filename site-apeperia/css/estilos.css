@@ -1,3 +1,8 @@
+.sprite-sprite, .sprite-icone-ok, .sprite-icone-x {
+  background-image: url('../imagens/sprite-s1e035a9ecf.png');
+  background-repeat: no-repeat;
+}
+
 .plataformas li, .social li a {
   text-indent: -9999px;
   overflow: hidden;
@@ -670,18 +675,17 @@ header .container {
   margin-left: 2em;
 }
 
-.icone-check, .icone-x {
-  background: url(../imagens/sprite.png) no-repeat;
-  width: 18px;
-  height: 18px;
+.sprite-icone-ok {
+  background-position: 0 0;
 }
 
-.icone-check {
-  background-position: -5px -5px;
+.sprite-icone-x {
+  background-position: 0 -23px;
 }
 
-.icone-x {
-  background-position: -33px -5px;
+.sprite-icone-ok, .sprite-icone-x {
+  width: 19px;
+  height: 19px;
 }
 
 /** Blog **/
@@ -862,7 +866,7 @@ footer a {
 
 .social a {
   background-position: top;
-  background-size: 50px 50px;
+  background-size: 30px 30px;
 }
 
 .social a[href*="facebook"] {

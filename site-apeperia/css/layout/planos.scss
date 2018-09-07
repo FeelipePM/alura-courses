@@ -68,16 +68,8 @@
   margin-left: 2em;
 }
 
-.icone-check, .icone-x {
-  background: url(../imagens/sprite.png) no-repeat;
-  width: 18px;
-  height: 18px;
-}
-
-.icone-check {
-  background-position: -5px -5px;
-}
-
-.icone-x {
-  background-position: -33px -5px;
+@include all-sprite-sprites;
+.sprite-icone-ok, .sprite-icone-x {
+  width: 19px;
+  height: 19px;
 }
