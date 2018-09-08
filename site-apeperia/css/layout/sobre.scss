@@ -28,25 +28,11 @@
 
 .plataformas li {
   display: inline-block;
-  width: 50px;
-  height: 60px;
+  width: 66px;
+  height: 62px;
   @extend %image-replacement;
-  background-position: center;
   margin: 1em 1.5em 0 0;
 }
 
-.plataformas li:nth-child(1) {
-  background-image: url(../imagens/logo-apple.png);
-}
+@include all-plataformas-sprites;
 
-.plataformas li:nth-child(2) {
-  background-image: url(../imagens/logo-android.png);
-}
-
-.plataformas li:nth-child(3) {
-  background-image: url(../imagens/logo-windows.png);
-}
-
-.plataformas li:nth-child(4) {
-  background-image: url(../imagens/logo-blackberry.png);
-}
