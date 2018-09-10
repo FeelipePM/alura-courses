@@ -620,7 +620,7 @@ header .container {
 
 .plano {
   background: white;
-  width: 18em;
+  width: 288px;
   display: inline-block;
   margin: 1em 0 0 1.4em;
   padding-bottom: 2em;
@@ -818,8 +818,8 @@ footer::before {
 }
 
 footer .container {
-  padding-top: 3em;
-  height: 6.5em;
+  padding-top: 48px;
+  height: 104px;
   position: relative;
 }
 
